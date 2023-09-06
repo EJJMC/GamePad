@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/GamePad/static/css/main.073c9b0a.css",
+    "main.js": "/GamePad/static/js/main.57599c4b.js",
+    "static/js/787.9c27acec.chunk.js": "/GamePad/static/js/787.9c27acec.chunk.js",
+    "static/media/logo.svg": "/GamePad/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/GamePad/index.html",
+    "main.073c9b0a.css.map": "/GamePad/static/css/main.073c9b0a.css.map",
+    "main.57599c4b.js.map": "/GamePad/static/js/main.57599c4b.js.map",
+    "787.9c27acec.chunk.js.map": "/GamePad/static/js/787.9c27acec.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.57599c4b.js"
+  ]
+}
