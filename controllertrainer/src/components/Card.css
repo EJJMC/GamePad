@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   /* transform: rotate(90deg);  */
   transform-origin: center;
   color: white;
@@ -14,6 +14,7 @@
 .image-container img {
   overflow: hidden;
   height: 150px;
+  
 }
 
 /* Media query for mobile screens */
@@ -22,7 +23,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap; /* Allow cards to wrap onto the next row */
-    justify-content: center; /* Center the cards horizontally */
+    justify-content: left; /* Center the cards horizontally */
     align-items: center;
     overflow-x: hidden;
     transform: none; /* Remove rotation */
@@ -38,12 +39,13 @@
     color: white; 
     font-size: calc(10px + 2vmin);
     min-height: 100vh;
+    
   }
 
   .clickable-text
   {
     color: white;
-    padding: 10px;
+    
     
   }
 }

@@ -61,6 +61,16 @@ function Home() {
         <h2>Text Above the Cards</h2>
         <p>This is some additional information or description.</p>
       </div>
+      <div className="image-container">
+        <img
+          src="https://esports.gg/_next/image/?url=https%3A%2F%2Fadmin.esports.gg%2Fwp-content%2Fuploads%2F2023%2F05%2Fryu-hadoken-street-fighter-6.png&w=3840&q=75" // Replace with the URL of your image
+          alt="Your Image"
+          style={{
+            width: "50%",
+            height: "auto",
+          }}
+        />
+      </div>
       <div className="cards-container">
         <Link to="/ControllerInput">
           <div className="clickable-text">Click Me 1</div>
@@ -69,6 +79,7 @@ function Home() {
         <Link to="/ControllerInput">
           <div className="clickable-text">Click Me 2</div>
         </Link>
+        {/* Add more clickable-text elements as needed */}
       </div>
     </div>
   );
