@@ -1,17 +1,19 @@
 {
   "files": {
-    "main.css": "/GamePad/static/css/main.2a44a397.css",
-    "main.js": "/GamePad/static/js/main.ae10f8d2.js",
+    "main.css": "/GamePad/static/css/main.35a18a5c.css",
+    "main.js": "/GamePad/static/js/main.793549ad.js",
     "static/js/787.9c27acec.chunk.js": "/GamePad/static/js/787.9c27acec.chunk.js",
+    "static/media/RYU.gif": "/GamePad/static/media/RYU.97e23dddd9d164e8b140.gif",
     "static/media/select motion.png": "/GamePad/static/media/select motion.23d5e8f42df835e899c8.png",
+    "static/media/QCFmotions.png": "/GamePad/static/media/QCFmotions.a4d1fe4112508c656ab2.png",
     "static/media/InputBackground.png": "/GamePad/static/media/InputBackground.848f280ed89cb9eae3a0.png",
     "index.html": "/GamePad/index.html",
-    "main.2a44a397.css.map": "/GamePad/static/css/main.2a44a397.css.map",
-    "main.ae10f8d2.js.map": "/GamePad/static/js/main.ae10f8d2.js.map",
+    "main.35a18a5c.css.map": "/GamePad/static/css/main.35a18a5c.css.map",
+    "main.793549ad.js.map": "/GamePad/static/js/main.793549ad.js.map",
     "787.9c27acec.chunk.js.map": "/GamePad/static/js/787.9c27acec.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2a44a397.css",
-    "static/js/main.ae10f8d2.js"
+    "static/css/main.35a18a5c.css",
+    "static/js/main.793549ad.js"
   ]
 }
