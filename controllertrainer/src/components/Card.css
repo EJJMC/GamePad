@@ -17,21 +17,21 @@
   
 }
 
-/* Media query for mobile screens */
+
 @media (max-width: 740px) {
   .cards-container {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap; /* Allow cards to wrap onto the next row */
-    justify-content: left; /* Center the cards horizontally */
+    flex-wrap: wrap; 
+    justify-content: left; 
     align-items: center;
     overflow-x: hidden;
-    transform: none; /* Remove rotation */
+    transform: none; 
   }
   .title {
     width: 100%;
     height: 100%;
-    display: flex;
+   
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -47,6 +47,14 @@
     color: white;
     
     
+  }
+
+  .scrollable-container {
+    height: 100vh;
+    width: auto;
+    overflow-y: scroll;
+    display: flex; /* Use flex layout */
+    flex-direction: column; /* Arrange children in a column */
   }
 }
 

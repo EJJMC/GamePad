@@ -1,0 +1,48 @@
+/* info-page-styles.css */
+
+/* Rotate the entire content for the Info page by 180 degrees */
+.info-page-container {
+  transform: rotate(180deg);
+}
+
+/* Rotate individual elements within the Info page to bring them back to their normal orientation */
+/* Adjust as needed for specific elements */
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+/* info.css */
+
+/* Rotate the text */
+/* info.css */
+
+/* Rotate the text */
+.flipped-text {
+  transform: rotate(180deg);
+  writing-mode: vertical-lr; /* Vertical writing mode, top to bottom */
+  text-orientation: mixed; /* Adjust text orientation if needed */
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide text that exceeds the container */
+  margin: 0; /* Reset margin for default vertical alignment */
+  text-align: center; /* Center the text horizontally */
+  display: block; /* Display as a block element to stack vertically */
+  color: #ffffff;
+}
+
+/* Media query for phones */
+/* info.css */
+
+/* Rotate the text for screens wider than 740px */
+@media (min-width: 741px) {
+  .flipped-text {
+    transform: rotate(180deg);
+    writing-mode: vertical-lr; /* Vertical writing mode, top to bottom */
+    text-orientation: mixed; /* Adjust text orientation if needed */
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide text that exceeds the container */
+    margin: 0; /* Reset margin for default vertical alignment */
+    text-align: center; /* Center the text horizontally */
+    display: block; /* Display as a block element to stack vertically */
+  }
+}
+

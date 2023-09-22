@@ -98,6 +98,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./ControllerInput.css";
+import correctSequenceGif from "../images/RYU.gif";
 
 // Define image URLs for each button
 const buttonImages = {
@@ -116,6 +117,7 @@ const ControllerTester = () => {
   const [correctInputsCount, setCorrectInputsCount] = useState(0);
   const [wrongInputsCount, setWrongInputsCount] = useState(0);
   const [totalTries, setTotalTries] = useState(0);
+  const [showGif, setShowGif] = useState(false);
 
   useEffect(() => {
     const handleGamepadInput = () => {
@@ -163,6 +165,10 @@ const ControllerTester = () => {
         setSpecialMove("Hadouken");
         setSequenceStep(0);
         setCorrectInputsCount(correctInputsCount + 1);
+        setShowGif(true);
+        setTimeout(() => {
+          setShowGif(false);
+        }, 700); // Adjust the timeout duration as needed
       } else {
         if (
           pressedButtons.some((button) => [13, 15, 2].includes(button.button))
@@ -189,8 +195,14 @@ const ControllerTester = () => {
 
   return (
     <div className="gamepad-input-screen">
-      <h1>Gamepad Input Handling</h1>
-      <Link to="/home">Back to Home</Link>
+      <h1>QCF Punch Motion</h1>
+
+      {/* Use conditional rendering to show/hide the GIF */}
+      {showGif && (
+        <div className="gif-container">
+          <img src={correctSequenceGif} alt="Correct Sequence" />
+        </div>
+      )}
 
       <div className="content-left">
         {/* Display the Pressed Buttons with smaller images */}
@@ -217,6 +229,7 @@ const ControllerTester = () => {
           Retry
         </button>
       </div>
+      <Link to="/home">Back to Home</Link>
     </div>
   );
 };

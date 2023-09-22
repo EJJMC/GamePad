@@ -26,14 +26,15 @@
 
 import React from "react";
 import {
-  BrowserRouter as Router,
+  // BrowserRouter as Router,
   Routes,
   Route,
-  BrowserRouter,
+  // BrowserRouter,
   HashRouter,
 } from "react-router-dom";
 import Home from "./pages/Home";
 import ControllerInput from "./pages/ControllerInputScreen";
+import Info from "./pages/Info";
 
 import "./App.css";
 
@@ -44,6 +45,7 @@ function App() {
         <Route index element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/ControllerInput" element={<ControllerInput />} />
+        <Route path="/info" element={<Info />} />
       </Routes>
     </HashRouter>
   );

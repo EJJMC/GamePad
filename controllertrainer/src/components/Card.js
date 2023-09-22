@@ -1,12 +1,23 @@
 import React from "react";
 import "./Card.css";
 
-function Card({ title, body, imageUrl }) {
-  // Destructure props here
+function Card({ title, body, images }) {
   return (
     <div className="card-container">
       <div className="image-container">
-        <img src={imageUrl} alt="" />
+        <div className="image-scroll-container">
+          {images.map((imageUrl, index) => (
+            <img
+              key={index}
+              src={imageUrl}
+              alt=""
+              style={{
+                width: "50%",
+                height: "auto",
+              }}
+            />
+          ))}
+        </div>
       </div>
       <h3>{title}</h3>
       <p>{body}</p>
