@@ -1,19 +1,26 @@
 {
   "files": {
-    "main.css": "/GamePad/static/css/main.35a18a5c.css",
-    "main.js": "/GamePad/static/js/main.793549ad.js",
+    "main.css": "/GamePad/static/css/main.06edab97.css",
+    "main.js": "/GamePad/static/js/main.72a5f2d1.js",
     "static/js/787.9c27acec.chunk.js": "/GamePad/static/js/787.9c27acec.chunk.js",
+    "static/media/QCFInputOne.png": "/GamePad/static/media/QCFInputOne.9005a4c3375a6e8573de.png",
+    "static/media/QCFInputTwo.png": "/GamePad/static/media/QCFInputTwo.2806a9f3f09407b1594a.png",
+    "static/media/ZMotOne.png": "/GamePad/static/media/ZMotOne.0864cb0ff3436a716a11.png",
+    "static/media/ZMotTwo.png": "/GamePad/static/media/ZMotTwo.b9e13ac47680830fe984.png",
+    "static/media/QCFInputThree.png": "/GamePad/static/media/QCFInputThree.c779258d71603371ab8e.png",
     "static/media/RYU.gif": "/GamePad/static/media/RYU.97e23dddd9d164e8b140.gif",
-    "static/media/select motion.png": "/GamePad/static/media/select motion.23d5e8f42df835e899c8.png",
+    "static/media/selectmotion.png": "/GamePad/static/media/selectmotion.23d5e8f42df835e899c8.png",
+    "static/media/Ryu3s-stance.gif": "/GamePad/static/media/Ryu3s-stance.49522a4314f47067a9e4.gif",
     "static/media/QCFmotions.png": "/GamePad/static/media/QCFmotions.a4d1fe4112508c656ab2.png",
+    "static/media/zmotion.png": "/GamePad/static/media/zmotion.76d4416a9b277ea2d0d8.png",
     "static/media/InputBackground.png": "/GamePad/static/media/InputBackground.848f280ed89cb9eae3a0.png",
     "index.html": "/GamePad/index.html",
-    "main.35a18a5c.css.map": "/GamePad/static/css/main.35a18a5c.css.map",
-    "main.793549ad.js.map": "/GamePad/static/js/main.793549ad.js.map",
+    "main.06edab97.css.map": "/GamePad/static/css/main.06edab97.css.map",
+    "main.72a5f2d1.js.map": "/GamePad/static/js/main.72a5f2d1.js.map",
     "787.9c27acec.chunk.js.map": "/GamePad/static/js/787.9c27acec.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.35a18a5c.css",
-    "static/js/main.793549ad.js"
+    "static/css/main.06edab97.css",
+    "static/js/main.72a5f2d1.js"
   ]
 }
