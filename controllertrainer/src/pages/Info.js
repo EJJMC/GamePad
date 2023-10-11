@@ -2,154 +2,106 @@
 // import { Link } from "react-router-dom";
 // import "../components/info.css";
 
-// function Info() {
-//   return (
-//     <div className="info-page-container">
-//       <div className="flipped-text-container">
-//         <h2 className="flipped-text">Information Page</h2>
-//       </div>
-//       <div className="flipped-text-container">
-//         <p className="rotate-180 flipped-text">
-//           This is the information page.
-//           <br />
-//           You can add any relevant information or content here.
-//         </p>
-//       </div>
-//       {/* <Link to="/Home">
-//         <div className="rotate-180">Go back to Home</div>
-//       </Link> */}
-//     </div>
-//   );
-// }
-
-// export default Info;
-
-// import React, { useEffect, useState } from "react";
-// import { Link } from "react-router-dom";
-// import "./ControllerInput.css";
-
 // const ControllerTester = () => {
-//   const [buttonPresses, setButtonPresses] = useState([]);
-//   const [joystickX, setJoystickX] = useState(0);
-//   const [joystickY, setJoystickY] = useState(0);
-//   const [specialMove, setSpecialMove] = useState("");
-//   const [sequenceStep, setSequenceStep] = useState(0);
-//   const [sequenceError, setSequenceError] = useState(false);
-//   const [correctInputsCount, setCorrectInputsCount] = useState(0);
-//   const [wrongInputsCount, setWrongInputsCount] = useState(0);
-//   const [totalTries, setTotalTries] = useState(0);
-
-//   useEffect(() => {
-//     const handleGamepadInput = () => {
-//       const gamepads = navigator.getGamepads();
-//       for (const gamepad of gamepads) {
-//         if (gamepad) {
-//           const pressedButtons = [];
-//           for (let i = 0; i < gamepad.buttons.length; i++) {
-//             if (gamepad.buttons[i].pressed) {
-//               pressedButtons.push(i);
-//             }
-//           }
-//           setButtonPresses(pressedButtons);
-
-//           if (sequenceError) {
-//             setSequenceError(false);
-//             setWrongInputsCount(wrongInputsCount + 1);
-//           }
-
-//           if (sequenceStep === 0 && gamepad.buttons[13].pressed) {
-//             setSequenceStep(1);
-//           } else if (sequenceStep === 1 && gamepad.buttons[15].pressed) {
-//             setSequenceStep(2);
-//           } else if (sequenceStep === 2 && gamepad.buttons[2].pressed) {
-//             setSpecialMove("Hadouken");
-//             setSequenceStep(0);
-//             setCorrectInputsCount(correctInputsCount + 1);
-//           } else {
-//             if (
-//               gamepad.buttons[13].pressed ||
-//               gamepad.buttons[15].pressed ||
-//               gamepad.buttons[2].pressed
-//             ) {
-//               setSequenceError(true);
-//             }
-//             setSequenceStep(0);
-//             setSpecialMove("");
-//           }
-
-//           // Handle joystick input
-//           const adjustedJoystickX = gamepad.axes[0];
-//           const adjustedJoystickY = gamepad.axes[1];
-
-//           setJoystickX(adjustedJoystickX);
-//           setJoystickY(adjustedJoystickY);
-//         }
-//       }
-//     };
-
-//     const interval = setInterval(handleGamepadInput, 100);
-
-//     return () => {
-//       clearInterval(interval);
-//     };
-//   }, [sequenceStep, sequenceError, correctInputsCount, wrongInputsCount]);
-
-//   const handleRetry = () => {
-//     setCorrectInputsCount(0);
-//     setWrongInputsCount(0);
-//     setTotalTries(totalTries + 1);
-//   };
-
 //   return (
-//     <div className="gamepad-input-screen">
-//       <h1>Gamepad Input Handling</h1>
-//       <Link to="/home">Back to Home</Link> {/* Add a Link to the Home page */}
-//       <div>Pressed Buttons: {buttonPresses.join(", ")}</div>
-//       {/* <div>Joystick X: {joystickX.toFixed(2)}</div>
-//       <div>Joystick Y: {joystickY}</div> */}
-//       {sequenceError && <div className="error">Incorrect Sequence</div>}
-//       {specialMove && <div>Special Move: {specialMove}</div>}
-//       <div>Correct Inputs Count: {correctInputsCount}</div>
-//       <div>Wrong Inputs Count: {wrongInputsCount}</div>
-//       <div>Total Tries: {totalTries}</div>
-//       <button className="retry-button" onClick={handleRetry}>
-//         Retry
-//       </button>
+//     <div className="Info-Text">
+//       <h1>Why Use Classic ?</h1>
+
+//       <div className="content-right">
+//         {<div className="error"></div>}
+//         {
+//           <div>
+//             When using Modern Controls, you will be working with a noticeably
+//             smaller toolkit than if you were using Classic, and one of the
+//             biggest drawbacks of this tradeoff is that your options for combos
+//             will be much more limited.
+//           </div>
+//         }
+
+//         <div>
+//           Modern has preset combos, and you can craft your own combos without
+//           the assist button, but if you want to squeeze as much damage out of
+//           each hit as possible, you’ll want to play on Classic mode.{" "}
+//         </div>
+//       </div>
+//       <Link to="/home">Back to Home</Link>
 //     </div>
 //   );
 // };
 
 // export default ControllerTester;
 
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import "./ControllerInput.css";
+import "../components/info.css";
+import Classic from "../images/Classic.png";
+import Modern from "../images/Modern.png";
 
-const ControllerTester = () => {
+function Home() {
   return (
-    <div className="gamepad-input-screen">
-      <h1>Why Use Classic ?</h1>
+    <div className="scrollable-container">
+      <div className="title">
+        <div className="text-container">
+          <h3 className="info-text">
+            Moder vs Classic Controls, Which One To Use:
+          </h3>
 
-      <div className="content-right">
-        {<div className="error"></div>}
-        {
-          <div>
-            When using Modern Controls, you will be working with a noticeably
-            smaller toolkit than if you were using Classic, and one of the
-            biggest drawbacks of this tradeoff is that your options for combos
-            will be much more limited.
+          <div className="info-text">
+            Street Fighter 6 has two disntinct control types for players to use
+            - classic controls that require motion inputs to preform special
+            moves and modern controls that require no inputs.
           </div>
-        }
 
-        <div>
-          Modern has preset combos, and you can craft your own combos without
-          the assist button, but if you want to squeeze as much damage out of
-          each hit as possible, you’ll want to play on Classic mode.{" "}
+          <div className="info-text">
+            In order to understand the importance of learning motion inputs,
+            here are the positive and negatives of using Modern Controls:
+          </div>
+          <h3 className="info-text">Positives of using modern controls:</h3>
+          <img
+            src={Modern}
+            alt="Select Motion"
+            style={{
+              width: "10%",
+              height: "auto",
+              marginLeft: "auto",
+              marginRight: "auto",
+              transformOrigin: "center",
+            }}
+          />
+          <h4 className="info-text">single button special and super moves</h4>
+          <div>
+            {" "}
+            The SF6 Modern Control scheme comes with one button designated for
+            special attacks. This means players can pull off special moves such
+            as fireballs and dragon punches as well as super attacks much more
+            quickly and with less chances for whiffing a move. There are also
+            dedicated single buttons for throws and key moves such as Drive
+            Impact and Drive Parry.
+          </div>
+        </div>
+
+        <div className="text-container">
+          <h3 className="info-text">Negatives of Using Modern:</h3>
+          <h4 className="info-text">Missing Normal moves:</h4>
+          <div className="info-text">
+            Replacing the traditional six-button control scheme means you will
+            lose some of a character’s normal moves and unique attacks. The
+            impact varies by character with fighters such as Luke not losing too
+            much while Ryu loses quite a bit. In addition to reducing your move
+            options, this can also make you more predictable.
+          </div>
+
+          <h4 className="info-text">Damage Reduction:</h4>
+          <div className="info-text">
+            Performing special moves and supers via simplified Modern Controls
+            reduces their damage by a certain percentage. The good news is that
+            you can still manually input certain specials even when in Modern
+            Control mode, allowing you to vary them and retain their damage.
+          </div>
         </div>
       </div>
-      <Link to="/home">Back to Home</Link>
     </div>
   );
-};
+}
 
-export default ControllerTester;
+export default Home;

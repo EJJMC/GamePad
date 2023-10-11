@@ -1,48 +1,97 @@
-/* info-page-styles.css */
 
-/* Rotate the entire content for the Info page by 180 degrees */
-.info-page-container {
-  transform: rotate(180deg);
+.card-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+
+  transform-origin: center;
+  color: white;
+  font-size: calc(10px + 1vmin);
 }
 
-/* Rotate individual elements within the Info page to bring them back to their normal orientation */
-/* Adjust as needed for specific elements */
-.rotate-180 {
-  transform: rotate(180deg);
+
+
+.image-container {
+  display: flex;
+  flex-direction: row; /* Ensure images are in a horizontal line */
+  align-items: center;
+  text-align: center; /* For centering the link text */
+  /* Add any other styling you need */
 }
 
-/* info.css */
-
-/* Rotate the text */
-/* info.css */
-
-/* Rotate the text */
-.flipped-text {
-  transform: rotate(180deg);
-  writing-mode: vertical-lr; /* Vertical writing mode, top to bottom */
-  text-orientation: mixed; /* Adjust text orientation if needed */
-  white-space: nowrap; /* Prevent text from wrapping */
-  overflow: hidden; /* Hide text that exceeds the container */
-  margin: 0; /* Reset margin for default vertical alignment */
-  text-align: center; /* Center the text horizontally */
-  display: block; /* Display as a block element to stack vertically */
-  color: #ffffff;
+.image-container img {
+  width: 200px; /* Adjust the width as needed */
+  height: auto;
+  margin-right: 1px; /* Add margin to create spacing between images */
 }
 
-/* Media query for phones */
-/* info.css */
 
-/* Rotate the text for screens wider than 740px */
-@media (min-width: 741px) {
-  .flipped-text {
-    transform: rotate(180deg);
-    writing-mode: vertical-lr; /* Vertical writing mode, top to bottom */
-    text-orientation: mixed; /* Adjust text orientation if needed */
-    white-space: nowrap; /* Prevent text from wrapping */
-    overflow: hidden; /* Hide text that exceeds the container */
-    margin: 0; /* Reset margin for default vertical alignment */
-    text-align: center; /* Center the text horizontally */
-    display: block; /* Display as a block element to stack vertically */
+
+
+
+@media (max-width: 740px) {
+  .card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    transform: none;
+    align-items: center;
+    justify-content: center;
   }
+
+  .title {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: calc(10px + 2vmin);
+    min-height: 10vh;
+  }
+
+  .clickable-text {
+    color: white;
+  }
+
+  .scrollable-container {
+    height: 100vh;
+    width: auto;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+  }
+
+  html,
+  body {
+    scroll-behavior: smooth;
+  }
+
+  /* Add this to your existing CSS file or component stylesheet */
+/* Add this to your existing CSS file or component stylesheet */
+.horizontal-scroll {
+  display: flex;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent link items from wrapping to the next line */
 }
+
+.centered-link {
+  text-align: center;
+  display: inline-block; /* Ensure links stay in a line */
+  margin-right: 20px; /* Adjust the spacing between links as needed */
+}
+
+.info-text {
+  margin-bottom: 10px; /* Add margin to create a gap between divs */
+}
+.text-container {
+  padding: 20px; /* Add padding to create space around the text */
+}
+
+}
+
 

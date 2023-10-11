@@ -99,12 +99,17 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./ControllerInput.css";
 import correctSequenceGif from "../images/RYU.gif";
+import DownArrow from "../images/Down.png";
+import FowardArrow from "../images/Foward.png";
+import Punch from "../images/Punch.png";
+import defaultGif from "../images/Ryu3s-stance.gif";
+import TopNavbar from "./TopNavbar";
 
 // Define image URLs for each button
 const buttonImages = {
-  13: "https://www.nicepng.com/png/detail/50-507977_arrow-pointing-down-in-a-circle-bulb-icon.png",
-  15: "https://simg.nicepng.com/png/small/758-7586854_arrow-png-transparent-icon-right-arrow-in-circle.png",
-  2: "https://oyster.ignimgs.com/mediawiki/apis.ign.com/street-fighter-x-tekken/8/8f/Punch.png",
+  13: DownArrow,
+  15: FowardArrow,
+  2: Punch,
 };
 
 const ControllerTester = () => {
@@ -141,7 +146,10 @@ const ControllerTester = () => {
         }
       }
 
-      setButtonPresses(pressedButtons);
+      // Append newly pressed buttons to the existing ones, but keep a maximum length of 10
+      setButtonPresses((prevButtonPresses) =>
+        [...prevButtonPresses, ...pressedButtons].slice(-10)
+      ); // Only keep the last 10 entries
 
       if (sequenceError) {
         setSequenceError(false);
@@ -168,7 +176,7 @@ const ControllerTester = () => {
         setShowGif(true);
         setTimeout(() => {
           setShowGif(false);
-        }, 700); // Adjust the timeout duration as needed
+        }, 700);
       } else {
         if (
           pressedButtons.some((button) => [13, 15, 2].includes(button.button))
@@ -192,44 +200,56 @@ const ControllerTester = () => {
     setWrongInputsCount(0);
     setTotalTries(totalTries + 1);
   };
-
   return (
     <div className="gamepad-input-screen">
-      <h1>QCF Punch Motion</h1>
+      <TopNavbar />
 
-      {/* Use conditional rendering to show/hide the GIF */}
+      <div className="content-right">
+        <div>Correct Inputs Count: {correctInputsCount}</div>
+        <div>Wrong Inputs Count: {wrongInputsCount}</div>
+        <div>Total Tries: {totalTries}</div>
+        {specialMove && <div>Special Move: {specialMove}</div>}
+        {sequenceError && <div className="error">Incorrect Sequence</div>}
+        <Link to="/home">Back to Home</Link>
+        <button className="retry-button" onClick={handleRetry}>
+          Retry
+        </button>
+      </div>
+
+      <div className="content-left">
+        <div className="icon-container">
+          {buttonPresses.map((button, index) => (
+            <div key={index} className="icon">
+              {button.image && (
+                <img
+                  src={button.image}
+                  alt={`Button ${button.button}`}
+                  style={{ width: "50px", height: "50px" }}
+                />
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+
       {showGif && (
         <div className="gif-container">
           <img src={correctSequenceGif} alt="Correct Sequence" />
         </div>
       )}
 
-      <div className="content-left">
-        {/* Display the Pressed Buttons with smaller images */}
-        {buttonPresses.map((button, index) => (
-          <div key={index} className="icon">
-            {button.image && (
-              <img
-                src={button.image}
-                alt={`Button ${button.button}`}
-                style={{ width: "50px", height: "50px" }}
-              />
-            )}
-          </div>
-        ))}
+      <div
+        className={`default-gif ${showGif ? "hidden" : ""}`}
+        style={{
+          position: "absolute",
+          top: "360px",
+          left: "50px",
+          width: "50px",
+          height: "50px",
+        }}
+      >
+        <img src={defaultGif} alt="Default GIF" />
       </div>
-
-      <div className="content-right">
-        {sequenceError && <div className="error">Incorrect Sequence</div>}
-        {specialMove && <div>Special Move: {specialMove}</div>}
-        <div>Correct Inputs Count: {correctInputsCount}</div>
-        <div>Wrong Inputs Count: {wrongInputsCount}</div>
-        <div>Total Tries: {totalTries}</div>
-        <button className="retry-button" onClick={handleRetry}>
-          Retry
-        </button>
-      </div>
-      <Link to="/home">Back to Home</Link>
     </div>
   );
 };

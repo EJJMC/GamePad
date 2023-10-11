@@ -1,0 +1,26 @@
+
+.top-navbar {
+ 
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px; /* Adjust padding as needed */
+/* }  */
+
+/* TopNavbar.css
+
+
+  
+  .top-navbar h2 {
+    margin: 0; /* Remove the default margin from the heading */
+    font-size: 24px; /* Set the font size for the heading */
+    display: inline-block; /* Display the text on the same line */
+  }
+  
+  
+
+.top-navbar a {
+  text-decoration: none;
+  color: white;
+}
