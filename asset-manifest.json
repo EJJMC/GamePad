@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/GamePad/static/css/main.fe42cb51.css",
-    "main.js": "/GamePad/static/js/main.888f24a3.js",
+    "main.js": "/GamePad/static/js/main.715fca66.js",
     "static/js/787.9c27acec.chunk.js": "/GamePad/static/js/787.9c27acec.chunk.js",
     "static/media/qcf.gif": "/GamePad/static/media/qcf.0cfcbd380f068e7fa7d0.gif",
     "static/media/QCFInputOne.png": "/GamePad/static/media/QCFInputOne.9005a4c3375a6e8573de.png",
@@ -10,20 +10,22 @@
     "static/media/ZMotTwo.png": "/GamePad/static/media/ZMotTwo.b9e13ac47680830fe984.png",
     "static/media/QCFInputThree.png": "/GamePad/static/media/QCFInputThree.c779258d71603371ab8e.png",
     "static/media/RYU.gif": "/GamePad/static/media/RYU.97e23dddd9d164e8b140.gif",
+    "static/media/NumpadNotation3.png": "/GamePad/static/media/NumpadNotation3.aeb450a714c98e4f1036.png",
     "static/media/ryusrk.gif": "/GamePad/static/media/ryusrk.3cfd5768a72e568dee2c.gif",
     "static/media/selectmotion.png": "/GamePad/static/media/selectmotion.23d5e8f42df835e899c8.png",
     "static/media/Ryu3s-stance.gif": "/GamePad/static/media/Ryu3s-stance.49522a4314f47067a9e4.gif",
+    "static/media/ZMotOneinput.png": "/GamePad/static/media/ZMotOneinput.8462df23692c2318f9b0.png",
     "static/media/qcfinput.png": "/GamePad/static/media/qcfinput.1b7304af4b3ef2fd1292.png",
     "static/media/QCFmotions.png": "/GamePad/static/media/QCFmotions.a4d1fe4112508c656ab2.png",
     "static/media/zmotion.png": "/GamePad/static/media/zmotion.76d4416a9b277ea2d0d8.png",
     "static/media/InputBackground.png": "/GamePad/static/media/InputBackground.848f280ed89cb9eae3a0.png",
     "index.html": "/GamePad/index.html",
     "main.fe42cb51.css.map": "/GamePad/static/css/main.fe42cb51.css.map",
-    "main.888f24a3.js.map": "/GamePad/static/js/main.888f24a3.js.map",
+    "main.715fca66.js.map": "/GamePad/static/js/main.715fca66.js.map",
     "787.9c27acec.chunk.js.map": "/GamePad/static/js/787.9c27acec.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fe42cb51.css",
-    "static/js/main.888f24a3.js"
+    "static/js/main.715fca66.js"
   ]
 }
