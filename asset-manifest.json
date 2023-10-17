@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/GamePad/static/css/main.fe42cb51.css",
-    "main.js": "/GamePad/static/js/main.153345f0.js",
+    "main.css": "/GamePad/static/css/main.68e5f83a.css",
+    "main.js": "/GamePad/static/js/main.c8edcae9.js",
     "static/js/787.9c27acec.chunk.js": "/GamePad/static/js/787.9c27acec.chunk.js",
     "static/media/qcf.gif": "/GamePad/static/media/qcf.0cfcbd380f068e7fa7d0.gif",
     "static/media/QCFInputOne.png": "/GamePad/static/media/QCFInputOne.9005a4c3375a6e8573de.png",
@@ -14,6 +14,7 @@
     "static/media/FreePratice.png": "/GamePad/static/media/FreePratice.910b0daa4e00f6f491f1.png",
     "static/media/ryusrk.gif": "/GamePad/static/media/ryusrk.3cfd5768a72e568dee2c.gif",
     "static/media/selectmotion.png": "/GamePad/static/media/selectmotion.23d5e8f42df835e899c8.png",
+    "static/media/Ken3s-stance.gif": "/GamePad/static/media/Ken3s-stance.16e01f00704f7175477e.gif",
     "static/media/Ryu3s-stance.gif": "/GamePad/static/media/Ryu3s-stance.49522a4314f47067a9e4.gif",
     "static/media/ZMotOneinput.png": "/GamePad/static/media/ZMotOneinput.8462df23692c2318f9b0.png",
     "static/media/Notation.png": "/GamePad/static/media/Notation.25078024877ee31392e5.png",
@@ -23,13 +24,14 @@
     "static/media/BasicTraining.png": "/GamePad/static/media/BasicTraining.7565e51bd0330d9260ec.png",
     "static/media/ModernC.png": "/GamePad/static/media/ModernC.5690cb5317d5a6d7fd73.png",
     "static/media/InputBackground.png": "/GamePad/static/media/InputBackground.848f280ed89cb9eae3a0.png",
+    "static/media/ken-block.gif": "/GamePad/static/media/ken-block.ae4fddbee71cc0855f65.gif",
     "index.html": "/GamePad/index.html",
-    "main.fe42cb51.css.map": "/GamePad/static/css/main.fe42cb51.css.map",
-    "main.153345f0.js.map": "/GamePad/static/js/main.153345f0.js.map",
+    "main.68e5f83a.css.map": "/GamePad/static/css/main.68e5f83a.css.map",
+    "main.c8edcae9.js.map": "/GamePad/static/js/main.c8edcae9.js.map",
     "787.9c27acec.chunk.js.map": "/GamePad/static/js/787.9c27acec.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fe42cb51.css",
-    "static/js/main.153345f0.js"
+    "static/css/main.68e5f83a.css",
+    "static/js/main.c8edcae9.js"
   ]
 }
