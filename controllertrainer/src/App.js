@@ -35,6 +35,9 @@ import {
 import Home from "./pages/Home";
 import ControllerInput from "./pages/ControllerInputScreen";
 import Info from "./pages/Info";
+import ControllerInputScreenDP from "./pages/ControllerInputScreenDP";
+import Numpad from "./pages/Numpad";
+import NumpadFreePlay from "./pages/NumpadFreePlay";
 
 import "./App.css";
 
@@ -46,6 +49,12 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/ControllerInput" element={<ControllerInput />} />
         <Route path="/info" element={<Info />} />
+        <Route path="/numpad" element={<Numpad />} />
+        <Route path="/NumpadFreePlay" element={<NumpadFreePlay />} />
+        <Route
+          path="/ControllerInputDP"
+          element={<ControllerInputScreenDP />}
+        />
       </Routes>
     </HashRouter>
   );

@@ -14,10 +14,10 @@
 
 .image-container {
   display: flex;
-  flex-direction: row; /* Ensure images are in a horizontal line */
+  flex-direction: row; 
   align-items: center;
-  text-align: center; /* For centering the link text */
-  /* Add any other styling you need */
+  text-align: center; 
+
 }
 
 .image-container img {

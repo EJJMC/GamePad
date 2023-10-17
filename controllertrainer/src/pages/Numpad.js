@@ -35,7 +35,7 @@ import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import "../components/info.css";
 import Classic from "../images/Classic.png";
-import Modern from "../images/Modern.png";
+import Numpadimg from "../images/NumpadNotation3.png";
 
 function Home() {
   return (
@@ -45,26 +45,18 @@ function Home() {
           <Link to="/home" style={{ color: "white" }}>
             Back to Home
           </Link>
-          <h3 className="info-text">
-            Moder vs Classic Controls, Which One To Use:
-          </h3>
-
-          <div className="info-text">
-            Street Fighter 6 has two disntinct control types for players to use
-            - classic controls that require motion inputs to preform special
-            moves and modern controls that require no inputs.
-          </div>
-
-          <div className="info-text">
-            In order to understand the importance of learning motion inputs,
-            here are the positive and negatives of using Modern Controls:
-          </div>
-          <h3 className="info-text">Positives of using modern controls:</h3>
+          <h3 className="info-text">Numpad Notations, What are they?</h3>
+          Numpad notation is a form of fighting game notation in which the
+          directions that you may move in a fighting game are mapped to the
+          layout of a keyboard's numpad. The notation is oriented as follows,
+          with the "N" in the middle representing "neutral:"
+          <div className="info-text"></div>
+          <h3 className="info-text">Infographic Of Numpad:</h3>
           <img
-            src={Modern}
+            src={Numpadimg}
             alt="Select Motion"
             style={{
-              width: "10%",
+              width: "100%",
               height: "auto",
               marginLeft: "auto",
               marginRight: "auto",
@@ -74,33 +66,24 @@ function Home() {
           <h4 className="info-text">single button special and super moves</h4>
           <div>
             {" "}
-            The SF6 Modern Control scheme comes with one button designated for
-            special attacks. This means players can pull off special moves such
-            as fireballs and dragon punches as well as super attacks much more
-            quickly and with less chances for whiffing a move. There are also
-            dedicated single buttons for throws and key moves such as Drive
-            Impact and Drive Parry.
+            Numpad notation is the most convenient way to quickly transcribe
+            complex inputs and combos. It originated as an easy way of
+            discussing fighting game commands before arrow keys were commonly
+            available on computer character sets. They are now mostly in vogue
+            within anime fighter scenes, but are being used for this project as
+            some of the more obscure fighters have complicated inputs and
+            combos.
           </div>
         </div>
 
         <div className="text-container">
-          <h3 className="info-text">Negatives of Using Modern:</h3>
-          <h4 className="info-text">Missing Normal moves:</h4>
+          <h4 className="info-text">Common Examples of Motion Notations For Quarter-Circle Forward (QCF):</h4>
           <div className="info-text">
-            Replacing the traditional six-button control scheme means you will
-            lose some of a character’s normal moves and unique attacks. The
-            impact varies by character with fighters such as Luke not losing too
-            much while Ryu loses quite a bit. In addition to reducing your move
-            options, this can also make you more predictable.
+            Standard notation: d, df, f (down, down forward, forward)
           </div>
+          <div className="info-text">Numpad notation: 236</div>
 
           <h4 className="info-text">Damage Reduction:</h4>
-          <div className="info-text">
-            Performing special moves and supers via simplified Modern Controls
-            reduces their damage by a certain percentage. The good news is that
-            you can still manually input certain specials even when in Modern
-            Control mode, allowing you to vary them and retain their damage.
-          </div>
         </div>
       </div>
     </div>
