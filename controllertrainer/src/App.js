@@ -35,9 +35,12 @@ import {
 import Home from "./pages/Home";
 import ControllerInput from "./pages/ControllerInputScreen";
 import Info from "./pages/Info";
-import ControllerInputScreenDP from "./pages/ControllerInputScreenDP";
+
 import Numpad from "./pages/Numpad";
+import Tatsu from "./pages/Tatsu";
 import NumpadFreePlay from "./pages/NumpadFreePlay";
+import ReverseQCF from "./pages/ReverseQCF";
+// import ReverseDP from "./pages/ReverseDP";
 
 import "./App.css";
 
@@ -49,7 +52,10 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/ControllerInput" element={<ControllerInput />} />
         <Route path="/info" element={<Info />} />
+        <Route path="/ReverseQCF" element={<ReverseQCF />} />
+        {/* <Route path="/ReverseDP" element={<ReverseDP />} /> */}
         <Route path="/numpad" element={<Numpad />} />
+        <Route path="/Tatsu" element={<Tatsu />} />
         <Route path="/NumpadFreePlay" element={<NumpadFreePlay />} />
         <Route
           path="/ControllerInputDP"

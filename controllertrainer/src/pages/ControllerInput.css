@@ -210,10 +210,61 @@ body, html {
     height: 50px;
   }
 
+  .zmot-container {
+    position: absolute;
+    top: 280px; 
+    left: 150px; /* Set this to the desired left position */
+    width: 50px;
+    height: 50px;
+  }
+
+  .tatsu-container {
+    position: absolute;
+    top: 330px; 
+    left: 120px; /* Set this to the desired left position */
+    width: 50px;
+    height: 50px;
+  }
+
   .ken-container {
     position: absolute;
     top: 360px; 
     left: 320px; /* Set this to the desired left position */
+    width: 60px;
+    height: auto;
+    transform: scaleX(-1);
+  }
+
+  .kentatsu-container {
+    position: absolute;
+    top: 360px; 
+    left: 260px; /* Set this to the desired left position */
+    width: 60px;
+    height: auto;
+    transform: scaleX(-1);
+  }
+
+  .kendp-container {
+    position: absolute;
+    top: 360px; 
+    left: 270px; /* Set this to the desired left position */
+    width: 60px;
+    height: auto;
+    transform: scaleX(-1);
+  }
+
+  .Reverseken-container {
+    position: absolute;
+    top: 360px; 
+    left: 90px; /* Set this to the desired left position */
+    width: 50px;
+    height: 50px;
+  }
+
+  .ReverseRyu-container {
+    position: absolute;
+    top: 360px; 
+    left: 270px; /* Set this to the desired left position */
     width: 60px;
     height: auto;
     transform: scaleX(-1);

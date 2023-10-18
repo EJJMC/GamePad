@@ -9,7 +9,7 @@ import Notation from "../images/Notation.png";
 import FreeP from "../images/FreePratice.png";
 import ModernC from "../images/ModernC.png";
 import QCFTwo from "../images/QCFInputTwo.png";
-import QCFThree from "../images/QCFInputThree.png";
+import QCFThree from "../images/tatsu.png";
 import selectZMotImage from "../images/zmotion.png";
 import ZmotOne from "../images/ZMotOne.png";
 import ZmotTwo from "../images/ZMotTwo.png";
@@ -147,7 +147,7 @@ function Home() {
               />
             </Link>
 
-            <Link to="/ControllerInput" className="centered-link">
+            <Link to="/ReverseQCF" className="centered-link">
               <img
                 src={QCFTwo}
                 alt="Select Motion"
@@ -158,7 +158,7 @@ function Home() {
               />
             </Link>
 
-            <Link to="/ControllerInput" className="centered-link">
+            <Link to="/Tatsu" className="centered-link">
               <img
                 src={QCFThree}
                 alt="Select Motion"
@@ -171,10 +171,10 @@ function Home() {
           </div>
         </div>
         <img
-          src={selectQCFImage}
+          src={selectZMotImage}
           alt="Select Motion"
           style={{
-            width: "50%",
+            width: "40%",
             height: "auto",
             transformOrigin: "center",
           }}
@@ -182,9 +182,9 @@ function Home() {
 
         <div className="image-container">
           <div className="horizontal-scroll">
-            <Link to="/ControllerInput" className="centered-link">
+            <Link to="/ControllerInputDP" className="centered-link">
               <img
-                src={QCFOne}
+                src={ZmotOne}
                 alt="Select Motion"
                 style={{
                   height: "auto",
@@ -193,20 +193,9 @@ function Home() {
               />
             </Link>
 
-            <Link to="/ControllerInput" className="centered-link">
+            <Link to="/ReverseDP" className="centered-link">
               <img
-                src={QCFTwo}
-                alt="Select Motion"
-                style={{
-                  height: "auto",
-                  transformOrigin: "center",
-                }}
-              />
-            </Link>
-
-            <Link to="/ControllerInput" className="centered-link">
-              <img
-                src={QCFThree}
+                src={ZmotTwo}
                 alt="Select Motion"
                 style={{
                   height: "auto",
