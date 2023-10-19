@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/GamePad/static/css/main.72b78b8b.css",
-    "main.js": "/GamePad/static/js/main.aadc8f05.js",
+    "main.css": "/GamePad/static/css/main.8f0d887b.css",
+    "main.js": "/GamePad/static/js/main.99f97c73.js",
     "static/js/787.9c27acec.chunk.js": "/GamePad/static/js/787.9c27acec.chunk.js",
     "static/media/qcf.gif": "/GamePad/static/media/qcf.0cfcbd380f068e7fa7d0.gif",
     "static/media/QCFInputOne.png": "/GamePad/static/media/QCFInputOne.9005a4c3375a6e8573de.png",
     "static/media/QCFInputTwo.png": "/GamePad/static/media/QCFInputTwo.2806a9f3f09407b1594a.png",
+    "static/media/controllerinstructions.png": "/GamePad/static/media/controllerinstructions.61cdd5be57a9098d1252.png",
     "static/media/ZMotOne.png": "/GamePad/static/media/ZMotOne.0864cb0ff3436a716a11.png",
     "static/media/ZMotTwo.png": "/GamePad/static/media/ZMotTwo.b9e13ac47680830fe984.png",
     "static/media/RYU.gif": "/GamePad/static/media/RYU.97e23dddd9d164e8b140.gif",
@@ -28,12 +29,12 @@
     "static/media/InputBackground.png": "/GamePad/static/media/InputBackground.848f280ed89cb9eae3a0.png",
     "static/media/ken-block.gif": "/GamePad/static/media/ken-block.ae4fddbee71cc0855f65.gif",
     "index.html": "/GamePad/index.html",
-    "main.72b78b8b.css.map": "/GamePad/static/css/main.72b78b8b.css.map",
-    "main.aadc8f05.js.map": "/GamePad/static/js/main.aadc8f05.js.map",
+    "main.8f0d887b.css.map": "/GamePad/static/css/main.8f0d887b.css.map",
+    "main.99f97c73.js.map": "/GamePad/static/js/main.99f97c73.js.map",
     "787.9c27acec.chunk.js.map": "/GamePad/static/js/787.9c27acec.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.72b78b8b.css",
-    "static/js/main.aadc8f05.js"
+    "static/css/main.8f0d887b.css",
+    "static/js/main.99f97c73.js"
   ]
 }
