@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/GamePad/static/css/main.8f0d887b.css",
-    "main.js": "/GamePad/static/js/main.99f97c73.js",
+    "main.css": "/GamePad/static/css/main.363f8937.css",
+    "main.js": "/GamePad/static/js/main.f92164d1.js",
     "static/js/787.9c27acec.chunk.js": "/GamePad/static/js/787.9c27acec.chunk.js",
     "static/media/qcf.gif": "/GamePad/static/media/qcf.0cfcbd380f068e7fa7d0.gif",
     "static/media/QCFInputOne.png": "/GamePad/static/media/QCFInputOne.9005a4c3375a6e8573de.png",
@@ -10,11 +10,13 @@
     "static/media/ZMotOne.png": "/GamePad/static/media/ZMotOne.0864cb0ff3436a716a11.png",
     "static/media/ZMotTwo.png": "/GamePad/static/media/ZMotTwo.b9e13ac47680830fe984.png",
     "static/media/RYU.gif": "/GamePad/static/media/RYU.97e23dddd9d164e8b140.gif",
-    "static/media/NumpadNotation3.png": "/GamePad/static/media/NumpadNotation3.aeb450a714c98e4f1036.png",
+    "static/media/punchkick.png": "/GamePad/static/media/punchkick.50a7bb9d821c1522361c.png",
     "static/media/FreePratice.png": "/GamePad/static/media/FreePratice.910b0daa4e00f6f491f1.png",
     "static/media/ryutatsu.gif": "/GamePad/static/media/ryutatsu.7183d4c68787204c1770.gif",
     "static/media/tatsu.png": "/GamePad/static/media/tatsu.f9d79e0e35536b7e4078.png",
     "static/media/ryusrk.gif": "/GamePad/static/media/ryusrk.3cfd5768a72e568dee2c.gif",
+    "static/media/ViewCon.png": "/GamePad/static/media/ViewCon.26976a9db531ef728205.png",
+    "static/media/dpadnumpad.png": "/GamePad/static/media/dpadnumpad.215881e993206bfd053e.png",
     "static/media/selectmotion.png": "/GamePad/static/media/selectmotion.23d5e8f42df835e899c8.png",
     "static/media/Ken3s-stance.gif": "/GamePad/static/media/Ken3s-stance.16e01f00704f7175477e.gif",
     "static/media/Ryu3s-stance.gif": "/GamePad/static/media/Ryu3s-stance.49522a4314f47067a9e4.gif",
@@ -29,12 +31,12 @@
     "static/media/InputBackground.png": "/GamePad/static/media/InputBackground.848f280ed89cb9eae3a0.png",
     "static/media/ken-block.gif": "/GamePad/static/media/ken-block.ae4fddbee71cc0855f65.gif",
     "index.html": "/GamePad/index.html",
-    "main.8f0d887b.css.map": "/GamePad/static/css/main.8f0d887b.css.map",
-    "main.99f97c73.js.map": "/GamePad/static/js/main.99f97c73.js.map",
+    "main.363f8937.css.map": "/GamePad/static/css/main.363f8937.css.map",
+    "main.f92164d1.js.map": "/GamePad/static/js/main.f92164d1.js.map",
     "787.9c27acec.chunk.js.map": "/GamePad/static/js/787.9c27acec.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8f0d887b.css",
-    "static/js/main.99f97c73.js"
+    "static/css/main.363f8937.css",
+    "static/js/main.f92164d1.js"
   ]
 }
