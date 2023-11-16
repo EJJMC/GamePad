@@ -15,12 +15,11 @@ import selectQCFImage from "../images/QCFmotions.png";
 
 import QCFmotion from "../images/qcfinputreverse.png";
 
-import QCFgif from "../images/qcf.gif";
+import QCFgif from "../images/p2h.gif";
 
 import oppositeGif from "../images/Ken3s-stance.gif";
 
 import hurtGif from "../images/ken-block.gif";
-// Define image URLs for each button
 const buttonImages = {
   13: DownArrow,
   15: FowardArrow,
@@ -59,7 +58,6 @@ const ControllerTester = () => {
             }
           }
 
-          // Handle joystick input
           const adjustedJoystickX = gamepad.axes[0];
           const adjustedJoystickY = gamepad.axes[1];
 
@@ -68,10 +66,9 @@ const ControllerTester = () => {
         }
       }
 
-      // Append newly pressed buttons to the existing ones, but keep a maximum length of 10
       setButtonPresses((prevButtonPresses) =>
         [...prevButtonPresses, ...pressedButtons].slice(-10)
-      ); // Only keep the last 10 entries
+      );
 
       if (sequenceError) {
         setSequenceError(false);
@@ -157,8 +154,8 @@ const ControllerTester = () => {
           src={QCFgif}
           alt="Select Motion"
           style={{
-            width: "15%", // Set the image width to 100% of its container
-            height: "auto", // Maintain the aspect ratio
+            width: "25%",
+            height: "auto",
           }}
         />
       </div>
@@ -218,8 +215,8 @@ const ControllerTester = () => {
           position: "absolute",
           top: "360px",
           left: "300px",
-          width: "15%", // Set the image width to 100% of its container
-          height: "auto", // Maintain the aspect ratio
+          width: "15%",
+          height: "auto",
           transform: "scaleX(-1)",
         }}
       >
@@ -237,8 +234,8 @@ const ControllerTester = () => {
           position: "absolute",
           top: "360px",
           left: "100px",
-          width: "15%", // Set the image width to 100% of its container
-          height: "auto", // Maintain the aspect ratio
+          width: "15%",
+          height: "auto",
         }}
       >
         <img src={oppositeGif} alt="Default GIF" />

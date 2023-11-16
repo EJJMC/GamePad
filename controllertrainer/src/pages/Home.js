@@ -13,13 +13,13 @@ import QCFThree from "../images/tatsu.png";
 import selectZMotImage from "../images/zmotion.png";
 import ZmotOne from "../images/ZMotOne.png";
 import ZmotTwo from "../images/ZMotTwo.png";
+import ViewCon from "../images/ViewCon.png";
 import Classic from "../images/Classic.png";
 
 function Home() {
   const selectMotionRef = useRef(null);
 
   useEffect(() => {
-    // Scroll to the selectMotionRef element when the component mounts
     if (selectMotionRef.current) {
       selectMotionRef.current.scrollIntoView({ behavior: "smooth" });
     }
@@ -40,44 +40,6 @@ function Home() {
           }}
         />
 
-        {/* <div className="text-container">
-          <Link to="/Info">
-            <div className="clickable-text">
-              <img
-                src={Classic}
-                alt="Select Motion"
-                style={{
-                  width: "7%",
-                  height: "auto",
-                  marginLeft: "auto",
-                  marginRight: "auto",
-                  transformOrigin: "center",
-                }}
-              />
-              Why Should I Use Classic Controls ?
-            </div>
-          </Link>
-        </div>
-
-        <div className="text-container">
-          <Link to="/numpad">
-            <div className="clickable-text">
-              <img
-                src={Classic}
-                alt="Select Motion"
-                style={{
-                  width: "7%",
-                  height: "auto",
-                  marginLeft: "auto",
-                  marginRight: "auto",
-                  transformOrigin: "center",
-                }}
-              />
-              What Do The Numbers Mean ?
-            </div>
-          </Link>
-        </div> */}
-
         <img
           src={BasicTraining}
           alt="Select Motion"
@@ -90,7 +52,17 @@ function Home() {
 
         <div className="image-container">
           <div className="horizontal-scroll">
-            <Link to="/numpad" className="centered-link">
+            <Link to="/Numpad" className="centered-link">
+              <img
+                src={ViewCon}
+                alt="Select Motion"
+                style={{
+                  height: "auto",
+                  transformOrigin: "center",
+                }}
+              />
+            </Link>
+            <Link to="/NumpadFreePlay" className="centered-link">
               <img
                 src={Notation}
                 alt="Select Motion"
@@ -104,17 +76,6 @@ function Home() {
             <Link to="/info" className="centered-link">
               <img
                 src={ModernC}
-                alt="Select Motion"
-                style={{
-                  height: "auto",
-                  transformOrigin: "center",
-                }}
-              />
-            </Link>
-
-            <Link to="/NumpadFreePlay" className="centered-link">
-              <img
-                src={FreeP}
                 alt="Select Motion"
                 style={{
                   height: "auto",
@@ -193,7 +154,7 @@ function Home() {
               />
             </Link>
 
-            <Link to="/ReverseDP" className="centered-link">
+            <Link to="/ReverseDragonPunch" className="centered-link">
               <img
                 src={ZmotTwo}
                 alt="Select Motion"

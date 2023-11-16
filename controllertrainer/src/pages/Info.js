@@ -1,36 +1,3 @@
-// import React from "react";
-// import { Link } from "react-router-dom";
-// import "../components/info.css";
-
-// const ControllerTester = () => {
-//   return (
-//     <div className="Info-Text">
-//       <h1>Why Use Classic ?</h1>
-
-//       <div className="content-right">
-//         {<div className="error"></div>}
-//         {
-//           <div>
-//             When using Modern Controls, you will be working with a noticeably
-//             smaller toolkit than if you were using Classic, and one of the
-//             biggest drawbacks of this tradeoff is that your options for combos
-//             will be much more limited.
-//           </div>
-//         }
-
-//         <div>
-//           Modern has preset combos, and you can craft your own combos without
-//           the assist button, but if you want to squeeze as much damage out of
-//           each hit as possible, you’ll want to play on Classic mode.{" "}
-//         </div>
-//       </div>
-//       <Link to="/home">Back to Home</Link>
-//     </div>
-//   );
-// };
-
-// export default ControllerTester;
-
 import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import "../components/info.css";

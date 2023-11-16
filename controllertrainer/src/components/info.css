@@ -16,16 +16,15 @@
 
 .image-container {
   display: flex;
-  flex-direction: row; /* Ensure images are in a horizontal line */
+  flex-direction: row; 
   align-items: center;
-  text-align: center; /* For centering the link text */
-  /* Add any other styling you need */
+  text-align: center; 
 }
 
 .image-container img {
-  width: 200px; /* Adjust the width as needed */
+  width: 200px; 
   height: auto;
-  margin-right: 1px; /* Add margin to create spacing between images */
+  margin-right: 1px; 
 }
 
 
@@ -71,25 +70,24 @@
     scroll-behavior: smooth;
   }
 
-  /* Add this to your existing CSS file or component stylesheet */
-/* Add this to your existing CSS file or component stylesheet */
+  
 .horizontal-scroll {
   display: flex;
-  overflow-x: auto; /* Enable horizontal scrolling */
-  white-space: nowrap; /* Prevent link items from wrapping to the next line */
+  overflow-x: auto; 
+  white-space: nowrap; 
 }
 
 .centered-link {
   text-align: center;
-  display: inline-block; /* Ensure links stay in a line */
-  margin-right: 20px; /* Adjust the spacing between links as needed */
+  display: inline-block; 
+  margin-right: 20px; 
 }
 
 .info-text {
-  margin-bottom: 10px; /* Add margin to create a gap between divs */
+  margin-bottom: 10px; 
 }
 .text-container {
-  padding: 20px; /* Add padding to create space around the text */
+  padding: 20px;
 }
 
 }

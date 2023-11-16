@@ -1,51 +1,4 @@
-/* 
 
-
-body, html {
-    margin: 0;
-    overflow: hidden; 
-    background-image: url(../images/InputBackground.png);
-
-  }
-
-  .content-left 
-  {
-    width: 100%;
-    height: 100%;
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transform: rotate(90deg);
-    transform-origin: center;
-    color: white; 
-    font-size: calc(10px + 2vmin);
- 
-  }
-  
-  .gamepad-input-screen {
-    width: 100%;
-    height: 100%;
-    
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transform: rotate(90deg);
-    transform-origin: center;
-    color: white; 
-    font-size: calc(10px + 2vmin);
-    min-height: 95vh;
-  }
-   */
-
-
-   /* ControllerTesterStyles.css */
-
-
-/* Default styles for larger screens */
 
 body, html {
   margin: 0;
@@ -81,6 +34,20 @@ body, html {
   left: 10px;
 }
 
+.buttonFreeplay
+{
+  width: 10%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: absolute;
+  top: 435px;
+  left: 15px;
+}
+
 .content-right {
   color: rgb(5, 5, 5);
   font-size: calc(10px + 2vmin);
@@ -93,13 +60,29 @@ body, html {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+.textBox {
+  color: rgb(5, 5, 5);
+  font-size: calc(8px + 2vmin);
+  position: absolute;
+  top: 00px;
+  right: 100px;
+  background-color: #f0f0f0; 
+  padding: 10px;
+  border-radius: 1px;
+ 
+}
+
+.textBox div {
+  margin-bottom: 20px; /
+}
+
 .info-box {
   margin-bottom: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 5px;
-  background-color: #fff; /* Background color for each info box */
+  background-color: #fff; 
   border-radius: 5px;
 }
 
@@ -108,7 +91,7 @@ body, html {
 }
 
 .info-label.error {
-  color: red; /* Change the error text color to red */
+  color: red; 
 }
 
 .retry-button {
@@ -140,12 +123,7 @@ body, html {
 .hidden {
   display: none;
 }
-/* 
-.qcf {
-  position: absolute;
-  top: 1px;
-  left: 90px;
-} */
+
 
 .otherimage {
   position: absolute;
@@ -153,16 +131,7 @@ body, html {
   left: 90px;
   
 }
-/* 
-.gif-container {
-  position: absolute;
-  top: 10;
-  left: 2;
-  background-size: cover;
-  z-index: 10;
-} */
 
-/* Responsive styles for smaller screens (max-width: 768px) */
 
 @media (max-width: 768px) {
   .gamepad-input-screen {
@@ -176,23 +145,23 @@ body, html {
       left: 5px;
   }
 
-  /* .default-gif {
-    position: absolute;
-    top: 10;
-    left: 2;
-    width: 1%;
-    height: 100%;
-    background-size: cover;
-    z-index: 1;
-  } */
+
 
 
 
   .qcfGIF {
-      width: 10%; /* Adjust the width as needed */
-      top: 250px; /* Adjust the top position */
-      right: 250px; /* Adjust the right position */
+      width: 10%; 
+      top: 250px; 
+      right: 250px; 
   }
+
+  .controllerinfo {
+    width: 70%;
+    height: auto;
+    position: absolute;
+    top: 500px;
+    right: 100px;
+}
 
   .qcf {
     position: absolute;
@@ -200,12 +169,12 @@ body, html {
     left: 10px;
   }
 
- /* Responsive styles for smaller screens (max-width: 768px) */
+
 @media (max-width: 768px) {
   .gif-container {
     position: absolute;
     top: 360px; 
-    left: 110px; /* Set this to the desired left position */
+    left: 110px; 
     width: 50px;
     height: 50px;
   }
@@ -213,15 +182,24 @@ body, html {
   .zmot-container {
     position: absolute;
     top: 280px; 
-    left: 150px; /* Set this to the desired left position */
+    left: 150px; 
     width: 50px;
     height: 50px;
+  }
+
+  .reversezmot-container {
+    position: absolute;
+    top: 280px; 
+    left: 300px; 
+    width: 50px;
+    height: 50px;
+    transform: scaleX(-1);
   }
 
   .tatsu-container {
     position: absolute;
     top: 330px; 
-    left: 120px; /* Set this to the desired left position */
+    left: 120px; 
     width: 50px;
     height: 50px;
   }
@@ -229,7 +207,7 @@ body, html {
   .ken-container {
     position: absolute;
     top: 360px; 
-    left: 320px; /* Set this to the desired left position */
+    left: 320px; 
     width: 60px;
     height: auto;
     transform: scaleX(-1);
@@ -238,7 +216,7 @@ body, html {
   .kentatsu-container {
     position: absolute;
     top: 360px; 
-    left: 260px; /* Set this to the desired left position */
+    left: 260px; 
     width: 60px;
     height: auto;
     transform: scaleX(-1);
@@ -247,24 +225,34 @@ body, html {
   .kendp-container {
     position: absolute;
     top: 360px; 
-    left: 270px; /* Set this to the desired left position */
+    left: 270px; 
     width: 60px;
     height: auto;
     transform: scaleX(-1);
   }
 
+  .kendpreverse-container {
+    position: absolute;
+    top: 360px; 
+    left: 180px;
+    width: 50px;
+    height: 50px;
+
+  }
+
   .Reverseken-container {
     position: absolute;
     top: 360px; 
-    left: 90px; /* Set this to the desired left position */
+    left: 90px; 
     width: 50px;
     height: 50px;
   }
 
+
   .ReverseRyu-container {
     position: absolute;
     top: 360px; 
-    left: 270px; /* Set this to the desired left position */
+    left: 270px; 
     width: 60px;
     height: auto;
     transform: scaleX(-1);
