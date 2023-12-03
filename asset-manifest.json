@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/GamePad/static/css/main.9f0af563.css",
-    "main.js": "/GamePad/static/js/main.d6ac1b17.js",
+    "main.js": "/GamePad/static/js/main.988abe29.js",
     "static/js/787.9c27acec.chunk.js": "/GamePad/static/js/787.9c27acec.chunk.js",
     "static/media/p2h.gif": "/GamePad/static/media/p2h.bd2fd382a6c1858fcfc4.gif",
     "static/media/p1h.gif": "/GamePad/static/media/p1h.d982e672717957f70d2a.gif",
@@ -35,11 +35,11 @@
     "static/media/ken-block.gif": "/GamePad/static/media/ken-block.ae4fddbee71cc0855f65.gif",
     "index.html": "/GamePad/index.html",
     "main.9f0af563.css.map": "/GamePad/static/css/main.9f0af563.css.map",
-    "main.d6ac1b17.js.map": "/GamePad/static/js/main.d6ac1b17.js.map",
+    "main.988abe29.js.map": "/GamePad/static/js/main.988abe29.js.map",
     "787.9c27acec.chunk.js.map": "/GamePad/static/js/787.9c27acec.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9f0af563.css",
-    "static/js/main.d6ac1b17.js"
+    "static/js/main.988abe29.js"
   ]
 }
