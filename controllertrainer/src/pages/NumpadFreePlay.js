@@ -7,6 +7,8 @@ import FowardArrow from "../images/Foward.png";
 import BackArrow from "../images/Back.png";
 import UpArrow from "../images/Up.png";
 import info from "../images/controllerinstructions.png";
+import DignalArrow from "../images/dignal.png";
+
 import Kick from "../images/kick.png";
 
 import Punch from "../images/Punch.png";
@@ -20,6 +22,7 @@ const buttonImages = {
   14: BackArrow,
   12: UpArrow,
   0: Kick,
+  4: DignalArrow,
 };
 
 const buttonText = {
@@ -29,6 +32,7 @@ const buttonText = {
   14: "4",
   12: "8",
   0: "Light Kick",
+  4: "3",
 };
 
 const ControllerTester = () => {
@@ -42,7 +46,6 @@ const ControllerTester = () => {
   const [wrongInputsCount, setWrongInputsCount] = useState(0);
   const [totalTries, setTotalTries] = useState(0);
   const [showGif, setShowGif] = useState(false);
-
   useEffect(() => {
     const handleGamepadInput = () => {
       const gamepads = navigator.getGamepads();
@@ -68,28 +71,34 @@ const ControllerTester = () => {
         [...prevButtonPresses, ...pressedButtons].slice(-10)
       );
 
-      if (sequenceError) {
-        setSequenceError(false);
-        setWrongInputsCount(wrongInputsCount + 1);
-      }
-
       if (
         sequenceStep === 0 &&
         pressedButtons.some((button) => button.button === 13)
       ) {
+        pressedButtons.push({ button: 4, image: buttonImages[4] });
         setSequenceStep(1);
       } else if (
         sequenceStep === 1 &&
         pressedButtons.some((button) => button.button === 15)
       ) {
-        setSequenceStep(2);
+        setTimeout(() => {
+          setShowGif(false);
+          setCorrectInputsCount(
+            (prevCorrectInputsCount) => prevCorrectInputsCount + 1
+          );
+          setSequenceStep(2);
+        }, 500);
+      } else if (
+        sequenceStep === 1 &&
+        pressedButtons.some((button) => button.button === 4)
+      ) {
+        setShowGif(true);
       } else if (
         sequenceStep === 2 &&
         pressedButtons.some((button) => button.button === 2)
       ) {
         setSpecialMove("Hadouken");
         setSequenceStep(0);
-        setCorrectInputsCount(correctInputsCount + 1);
         setShowGif(true);
         setTimeout(() => {
           setShowGif(false);

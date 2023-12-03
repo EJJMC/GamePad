@@ -95,7 +95,7 @@ const ControllerTester = () => {
         }
       } else if (sequenceStep === 3) {
         if (pressedButtons.some((button) => button.button === 2)) {
-          setSpecialMove("Hadouken");
+          setSpecialMove("Shourken");
           setSequenceStep(0);
           setCorrectInputsCount(correctInputsCount + 1);
           setShowGif(true);

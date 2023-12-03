@@ -54,7 +54,7 @@ body, html {
   position: absolute;
   top: 500px;
   right: 120px;
-  background-color: #f0f0f0; /* Choose your desired background color */
+  background-color: #f0f0f0;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -73,7 +73,7 @@ body, html {
 }
 
 .textBox div {
-  margin-bottom: 20px; /
+  margin-bottom: 20px; 
 }
 
 .info-box {

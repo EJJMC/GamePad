@@ -6,7 +6,7 @@ import DownArrow from "../images/Down.png";
 import FowardArrow from "../images/Foward.png";
 import BackArrow from "../images/Back.png";
 import UpArrow from "../images/Up.png";
-import DignalArrow from "../images/dignal.png";
+import rdiagnal from "../images/r-diagnal.png";
 import Punch from "../images/Punch.png";
 import defaultGif from "../images/Ryu3s-stance.gif";
 import TopNavbar from "./TopNavbar";
@@ -26,6 +26,7 @@ const buttonImages = {
   2: Punch,
   14: BackArrow,
   12: UpArrow,
+  4: rdiagnal,
 };
 
 const ControllerTester = () => {
@@ -74,27 +75,24 @@ const ControllerTester = () => {
         setSequenceError(false);
         setWrongInputsCount(wrongInputsCount + 1);
       }
-
       if (
         sequenceStep === 0 &&
         pressedButtons.some((button) => button.button === 13)
       ) {
+        pressedButtons.push({ button: 4, image: buttonImages[4] });
         setSequenceStep(1);
       } else if (
         sequenceStep === 1 &&
         pressedButtons.some((button) => button.button === 14)
       ) {
-        setSequenceStep(2);
-      } else if (
-        sequenceStep === 2 &&
-        pressedButtons.some((button) => button.button === 2)
-      ) {
-        setSpecialMove("Hadouken");
-        setSequenceStep(0);
-        setCorrectInputsCount(correctInputsCount + 1);
         setShowGif(true);
+
         setTimeout(() => {
           setShowGif(false);
+          setCorrectInputsCount(
+            (prevCorrectInputsCount) => prevCorrectInputsCount + 1
+          );
+          setSequenceStep(2);
         }, 700);
       } else {
         if (

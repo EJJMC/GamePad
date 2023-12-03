@@ -41,6 +41,13 @@ function Home() {
               transformOrigin: "center",
             }}
           />
+          <h5 className="info-text">How to preform the diagnol inputs ?</h5>
+          <div>
+            Diagnol inputs 1,3,9,7 are preformed when two buttons are pressed at
+            the same time. For example, going from 2 to 6 without lifting your
+            finger will count as the 3 diagnol input
+          </div>
+
           <h4 className="info-text">Punch and Kick locations</h4>
           <img
             src={puchkick}
